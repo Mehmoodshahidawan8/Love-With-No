@@ -1,0 +1,87 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and background */
+  body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background-color: #ffb6c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .message h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #yes-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  #no-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Heart Animation Background */
+  body {
+    background: #ffb6c1 url('https://www.transparenttextures.com/patterns/circuit-board.png') repeat;
+  }
+  
+  /* Floating hearts */
+  @keyframes float-heart {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .heart {
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    animation: float-heart 3s infinite;
+  }
+  
+  .heart:nth-child(odd) {
+    animation-duration: 4s;
+  }
+  
